@@ -29,6 +29,10 @@ import dishImg4 from './dishImg4.jpg'
 import dishImg5 from './dishImg5.jpg'
 import dishImg6 from './dishImg6.jpg'
 import dishImg7 from './dishImg7.jpg'
+import dishImg8 from './dishImg8.jpg'
+import dishImg9 from './dishImg9.jpg'
+import dishImg10 from './dishImg10.jpg'
+
 
 
 import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.jpg";
@@ -65,7 +69,11 @@ export const assets = {
     dishImg4,
     dishImg5,
     dishImg6,
-    dishImg7
+    dishImg7,
+    dishImg8,
+    dishImg9,
+    dishImg10
+
 }
 
 // Replaced Cities with Menu Categories
@@ -217,6 +225,57 @@ export const menuDummyData = [
     image: assets.dishImg7,
     isAvailable: true,
     isSpicy: false
+  },
+  {
+    _id: "m8",
+    category: "Boissons",
+    name: "Spicy Mango Margarita",
+    description: "Une réinterprétation moderne et audacieuse de la célèbre Margarita, associant la fraîcheur tropicale de la mangue à la chaleur progressive des épices.",
+    ingredients: ["Purée de mangue", "Jus de citron jaune frais", "Tequila", "Triple sec", "Sirop épicé maison"],
+    mainSpice: "Sirop Épicé Mexicain",
+    price: 36,
+    image: assets.dishImg8,
+    isAvailable: true,
+    isSpicy: true
+  },
+  {
+    _id: "m9",
+    category: "Boissons",
+    name: "Amaretto Safran Sour",
+    description: "Un cocktail sophistiqué mêlant la puissance du whisky à la douceur de l'amaretto, sublimé par un cordial de safran et râpée de muscade fraîche.",
+    ingredients: [
+      "Whisky", 
+      "Amaretto", 
+      "Sirop de vanille", 
+      "Jus de citron frais", 
+      "Muscade fraîche", 
+      "Cordial de safran"
+    ],
+    mainSpice: "Safran & Muscade",
+    price: 38,
+    image: assets.dishImg9, // N'oubliez pas l'image dans vos assets
+    isAvailable: true,
+    isSpicy: false
+  },
+  {
+    _id: "m10",
+    category: "Boissons",
+    name: "Bloody Mary Signature",
+    description: "Inspirée des saveurs audacieuses, cette création offre un mélange intense de tomate et d'assaisonnements relevés qui réveille les sens.",
+    ingredients: [
+      "Vodka premium", 
+      "Jus de tomate", 
+      "Jus de citron", 
+      "Sauce Worcestershire", 
+      "Sauce pimentée (Tabasco)", 
+      "Sel", 
+      "Poivre noir"
+    ],
+    mainSpice: "Poivre Noir & Piment",
+    price: 32,
+    image: assets.dishImg10, // N'oubliez pas l'image dans vos assets
+    isAvailable: true,
+    isSpicy: true // On active le tag épicé pour le Tabasco et le poivre !
   }
 ]
 

@@ -30,14 +30,29 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Support Links */}
+        {/* Contact Section (Remplace l'ancienne section Support) */}
         <div>
-          <p className='font-playfair text-lg text-white mb-4'>SUPPORT</p>
-          <ul className='flex flex-col gap-2 text-sm'>
-            <li><a href="#" className='hover:text-[#C53030] transition-colors'>Aide & FAQ</a></li>
-            <li><a href="#" className='hover:text-[#C53030] transition-colors'>Réservations</a></li>
-            <li><a href="#" className='hover:text-[#C53030] transition-colors'>Contact</a></li>
-            <li><a href="#" className='hover:text-[#C53030] transition-colors'>Accessibilité</a></li>
+          <p className='font-playfair text-lg text-white mb-4'>NOUS CONTACTER</p>
+          <ul className='flex flex-col gap-4 text-sm'>
+            <li className='flex items-start gap-3'>
+              <span className='text-xl'>📍</span>
+              <span className='leading-tight'>
+                Daroufa Beach <br />
+                Nabeul, Tunisie
+              </span>
+            </li>
+            <li className='flex items-center gap-3'>
+              <span className='text-xl'>📞</span>
+              <a href="tel:+21627751220" className='hover:text-[#C53030] transition-colors'>
+                +216 27 751 220
+              </a>
+            </li>
+            <li className='flex items-center gap-3'>
+              <span className='text-xl'>✉️</span>
+              <a href="mailto:luniversepik@gmail.com" className='hover:text-[#C53030] transition-colors'>
+                luniversepik@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
 
