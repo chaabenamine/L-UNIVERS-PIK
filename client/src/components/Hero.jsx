@@ -3,16 +3,17 @@ import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
+    // FIX: Changed 'h-screen' to 'min-h-screen py-24' 
     <div className='flex flex-col items-start justify-center
      px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url("/src/assets/heroImage.jpg")] bg-no-repeat bg-cover bg-center
-     h-screen relative'>
+     min-h-screen py-24 relative'>
       
       {/* Optional: Added a dark overlay so the white text pops better against food imagery */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-full mt-10 md:mt-0">
           {/* Changed color from blue to a warm, spice-inspired red/orange */}
-          <p className='bg-[#C53030]/80 px-4 py-1.5 rounded-full mt-20 text-sm font-semibold tracking-wider uppercase inline-block'> 
+          <p className='bg-[#C53030]/80 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider uppercase inline-block'> 
             L’UNIVERS ÉPIK 
           </p>
           
@@ -23,35 +24,34 @@ const Hero = () => {
             Chaque plat naît autour d’une épice. Le feu du paprika, la douceur du safran et la profondeur du poivre noir deviennent les véritables héros de l’assiette.
           </p>
           
-          <form className='bg-white text-gray-800 rounded-lg px-6 py-5 mt-10 flex flex-col md:flex-row max-md:items-start gap-6 max-md:mx-auto shadow-2xl'>
+          <form className='bg-white text-gray-800 rounded-lg px-6 py-5 mt-10 flex flex-col md:flex-row max-md:items-start gap-6 max-md:mx-auto shadow-2xl w-full max-w-4xl'>
 
                 {/* Date Field */}
-                <div className='flex flex-col'>
+                <div className='flex flex-col w-full md:w-auto'>
                     <div className='flex items-center gap-2 font-medium text-sm text-gray-600'>
                         <img src={assets.calenderIcon} alt="calendar" className='h-4' />
                         <label htmlFor="date">Date</label>
                     </div>
-                    <input id="date" type="date" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none focus:border-[#C53030] transition-colors" />
+                    <input id="date" type="date" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none focus:border-[#C53030] transition-colors w-full" />
                 </div>
 
                 {/* Time Field (New for Restaurants) */}
-                <div className='flex flex-col'>
+                <div className='flex flex-col w-full md:w-auto'>
                     <div className='flex items-center gap-2 font-medium text-sm text-gray-600'>
-                        {/* You can replace this emoji with an icon from your assets like assets.clockIcon */}
                         <span className="text-gray-400 text-sm">⌚</span>
                         <label htmlFor="time">Heure</label>
                     </div>
-                    <input id="time" type="time" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none focus:border-[#C53030] transition-colors" />
+                    <input id="time" type="time" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none focus:border-[#C53030] transition-colors w-full" />
                 </div>
 
                 {/* Guests Field */}
-                <div className='flex flex-col max-md:w-full'>
+                <div className='flex flex-col w-full md:w-auto md:max-w-32'>
                     <label htmlFor="guests" className='font-medium text-sm text-gray-600'>Personnes</label>
-                    <input min={1} max={12} id="guests" type="number" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none md:max-w-24 focus:border-[#C53030] transition-colors" placeholder="2" />
+                    <input min={1} max={12} id="guests" type="number" className="rounded border border-gray-200 px-3 py-2 mt-1.5 text-sm outline-none focus:border-[#C53030] transition-colors w-full" placeholder="2" />
                 </div>
 
                 {/* Submit Button */}
-                <button type="submit" className='flex items-center justify-center gap-2 rounded-md bg-[#C53030] hover:bg-red-800 transition-colors py-3 px-6 text-white my-auto cursor-pointer max-md:w-full font-medium'>
+                <button type="submit" className='flex items-center justify-center gap-2 rounded-md bg-[#C53030] hover:bg-red-800 transition-colors py-3 px-6 text-white my-auto cursor-pointer w-full md:w-auto md:ml-auto font-medium'>
                     <span>Réserver une table</span>
                 </button>
             </form>
