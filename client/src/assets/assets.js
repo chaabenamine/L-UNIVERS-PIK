@@ -32,6 +32,7 @@ import dishImg7 from './dishImg7.jpg'
 import dishImg8 from './dishImg8.jpg'
 import dishImg9 from './dishImg9.jpg'
 import dishImg10 from './dishImg10.jpg'
+import dishImg11 from './dishImg11.jpg'
 
 
 
@@ -72,7 +73,8 @@ export const assets = {
     dishImg7,
     dishImg8,
     dishImg9,
-    dishImg10
+    dishImg10,
+    dishImg11
 
 }
 
@@ -149,7 +151,7 @@ export const menuDummyData = [
     description: "Le safran apporte finesse et profondeur aromatique à la délicatesse du carpaccio.",
     ingredients: ["Bœuf finement tranché", "Huile de safran", "Parmesan affiné", "Roquette fraîche", "Poivre rose", "Réduction balsamique"],
     mainSpice: "Safran",
-    price: 82, 
+    price: 56, 
     image: assets.dishImg1,
     isAvailable: true,
     isSpicy: false
@@ -161,7 +163,7 @@ export const menuDummyData = [
     description: "Une montée progressive de chaleur équilibrée par la douceur naturelle des crevettes.",
     ingredients: ["Crevettes grillées", "Sauce chili doux", "Ail rôti", "Coriandre fraîche", "Sésame torréfié"],
     mainSpice: "Chili",
-    price: 119,
+    price: 55,
     image: assets.dishImg2,
     isAvailable: true,
     isSpicy: true
@@ -173,7 +175,7 @@ export const menuDummyData = [
     description: "Une viande tendre sublimée par l’intensité aromatique du poivre noir et l’élégance de la truffe.",
     ingredients: ["Filet de bœuf premium", "Sauce poivre noir torréfié", "Purée truffée", "Légumes glacés", "Jus réduit"],
     mainSpice: "Poivre Noir Torréfié",
-    price: 127,
+    price: 70,
     image: assets.dishImg3,
     isAvailable: true,
     isSpicy: false
@@ -185,7 +187,7 @@ export const menuDummyData = [
     description: "Une assiette élégante où le fondant du canard rencontre la douceur des épices orientales et la richesse du miel caramélisé.",
     ingredients: ["Magret de canard rôti", "Glaçage miel & épices", "Purée de patate douce", "Figues rôties"],
     mainSpice: "Cannelle & Ras el hanout",
-    price: 134,
+    price: 60,
     image: assets.dishImg4,
     isAvailable: true,
     isSpicy: false
@@ -197,7 +199,7 @@ export const menuDummyData = [
     description: "Un mélange ultra crémeux de fromages premium relevé par un paprika fumé et une chaleur progressive de chipotle.",
     ingredients: ["Macaronis artisanaux", "Cheddar maturé", "Paprika fumé", "Piment chipotle", "Chapelure croustillante"],
     mainSpice: "Paprika Fumé & Chipotle",
-    price: 107,
+    price: 45,
     image: assets.dishImg5,
     isAvailable: true,
     isSpicy: true
@@ -209,7 +211,7 @@ export const menuDummyData = [
     description: "Une finale intense où le chocolat rencontre les épices douces et chaleureuses.",
     ingredients: ["Fondant chocolat noir", "Cannelle fumée", "Glace vanille artisanale", "Éclats caramel épicés"],
     mainSpice: "Cannelle Fumée",
-    price: 76,
+    price: 40,
     image: assets.dishImg6,
     isAvailable: true,
     isSpicy: false
@@ -221,7 +223,7 @@ export const menuDummyData = [
     description: "Une boisson rafraîchissante avec une légère chaleur épicée en fin de bouche.",
     ingredients: ["Fruits rouges frais", "Gingembre", "Citron vert", "Eau pétillante"],
     mainSpice: "Gingembre",
-    price: 35,
+    price: 25,
     image: assets.dishImg7,
     isAvailable: true,
     isSpicy: false
@@ -233,7 +235,7 @@ export const menuDummyData = [
     description: "Une réinterprétation moderne et audacieuse de la célèbre Margarita, associant la fraîcheur tropicale de la mangue à la chaleur progressive des épices.",
     ingredients: ["Purée de mangue", "Jus de citron jaune frais", "Tequila", "Triple sec", "Sirop épicé maison"],
     mainSpice: "Sirop Épicé Mexicain",
-    price: 36,
+    price: 26,
     image: assets.dishImg8,
     isAvailable: true,
     isSpicy: true
@@ -252,7 +254,7 @@ export const menuDummyData = [
       "Cordial de safran"
     ],
     mainSpice: "Safran & Muscade",
-    price: 38,
+    price: 28,
     image: assets.dishImg9, // N'oubliez pas l'image dans vos assets
     isAvailable: true,
     isSpicy: false
@@ -272,11 +274,35 @@ export const menuDummyData = [
       "Poivre noir"
     ],
     mainSpice: "Poivre Noir & Piment",
-    price: 32,
+    price: 27,
     image: assets.dishImg10, // N'oubliez pas l'image dans vos assets
     isAvailable: true,
     isSpicy: true // On active le tag épicé pour le Tabasco et le poivre !
-  }
+  },
+  {
+  _id: "m11",
+  category: "Boissons",
+  name: "Le Sultan Doré",
+  description: "Inspiré des marchés d’épices du Maroc et des anciennes routes qui reliaient l’Orient aux grands comptoirs du monde, Le Sultan Doré est une invitation au voyage sensoriel. Le sirop de vanille apporte sa douceur enveloppante, la muscade fraîchement micro-râpée diffuse une chaleur discrète, tandis que le whisky et l’amaretto offrent profondeur et caractère. Au cœur de cette création, le cordial de safran déploie ses notes précieuses et florales, comme une touche d’or liquide rappelant les trésors des souks et l’élégance des épices rares.",
+  ingredients: [
+    "Whisky",
+    "Amaretto",
+    "Sirop de vanille",
+    "Jus de citron frais",
+    "Muscade fraîche micro-râpée",
+    "Cordial de safran"
+  ],
+  spices: [
+    "Safran",
+    "Muscade"
+  ],
+  mainSpice: "Safran",
+  price: 25,
+  image: assets.dishImg11,
+  isAvailable: true,
+  isSpicy: false,
+  spiceLevel: 1
+}
 ]
 
 // Converted Bookings to Table Reservations
